@@ -1,0 +1,20 @@
+#certification{
+    padding-bottom: 30px;
+    .certificate-item{
+        h3{
+            @include fonts(Roboto,900,20px,rgba(0, 0, 0, 0.8));
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            width: 100%;
+            @include pGap(10px,10px,0,0);
+            background-color: rgba(0,201,97,0.19);
+        }
+
+        img{
+            transition: all linear .3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

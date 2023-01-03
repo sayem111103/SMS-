@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: unset;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,ul {
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8px;
+}
+
+.header{
+    position: relative;            
+    &::after{
+        content: '';
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #339966;
+    }
+
+    h3{
+        @include fonts(Roboto,900,30px,black);
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+}

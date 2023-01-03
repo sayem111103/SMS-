@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 0.8px;
+}
+
+.header {
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #339966;
+}
+.header h3 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 30px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+#logo .sms_logo {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#logo .sms_logo img {
+  width: 300px;
+}
+
+.navbar {
+  background-color: #102c46;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 9999;
+}
+.navbar .nav-main {
+  display: flex;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+.navbar .nav-main .nav-item {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.navbar .nav-main .nav-item:last-child {
+  border-right: none;
+}
+.navbar .nav-main .nav-item:hover {
+  background-color: #339966;
+  opacity: 1;
+}
+.navbar .nav-main .nav-item:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.navbar .nav-main .nav-item a {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar .nav-main .nav-item a span {
+  padding-left: 5px;
+}
+.navbar .nav-main .nav-item .sub-nav {
+  width: 230px;
+  padding-left: 0;
+  position: absolute;
+  background-color: #339966;
+  top: 46px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+}
+.navbar .nav-main .nav-item .sub-nav li {
+  border-bottom: 1px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+}
+.navbar .nav-main .nav-item .sub-nav li:last-child {
+  border-bottom: none;
+}
+.navbar .nav-main .nav-item .sub-nav li:hover a {
+  color: #fff;
+}
+.navbar .nav-main .nav-item .sub-nav li a {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  color: Black;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+.navbar .nav-main .nav-item .sub-nav li a span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+.navbar .nav-main .nav-item .sub-nav li a span i {
+  transform: rotate(270deg);
+  font-size: 15px;
+}
+.navbar .nav-main .nav-item .sub-nav li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.navbar .nav-main .nav-item .sub-nav .sub-link {
+  padding-left: 0;
+  position: absolute;
+  top: 0;
+  left: 100.8%;
+  width: 200px;
+  background-color: #339966;
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar .nav-main .nav-item .sub-nav .sub-link li {
+  border-bottom: 1px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navbar .nav-main .nav-item .sub-nav .sub-link li:last-child {
+  border-bottom: none;
+}
+.navbar .nav-main .nav-item .sub-nav .sub-link li:hover a {
+  color: #fff;
+}
+.navbar .nav-main .nav-item .sub-nav .sub-link li a {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+  color: Black;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+.navbar .nav-main .nav-item .sub-nav .sub-link li a span {
+  margin-left: 20px;
+}
+.navbar .nav-main .nav-item .sub-nav .sub-link li a span i {
+  transform: rotate(270deg);
+  font-size: 15px;
+}
+
+#banner {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+#banner .ban-left {
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  width: 40px;
+  z-index: 9999;
+  cursor: pointer;
+  height: 40px;
+  background-color: #102c46;
+  border-radius: 50%;
+  transform: translateY(-50%) rotate(177deg);
+  text-align: center;
+  line-height: 40px;
+}
+#banner .ban-left i {
+  font-size: 20px;
+  color: #fff;
+}
+#banner .ban-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 120px;
+  width: 40px;
+  height: 40px;
+  z-index: 9999;
+  cursor: pointer;
+  background-color: #102c46;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+#banner .ban-right i {
+  font-size: 20px;
+  color: #fff;
+}
+
+#about {
+  padding-top: 30px;
+}
+#about .about-text p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  color: Black;
+  text-align: justify;
+  line-height: 24px;
+}
+#about .about-text p a {
+  text-transform: capitalize;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  color: #339966;
+}
+
+#certification {
+  padding-bottom: 30px;
+}
+#certification .certificate-item h3 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: rgba(0, 201, 97, 0.19);
+}
+#certification .certificate-item img {
+  transition: all linear 0.3s;
+}
+#certification .certificate-item img:hover {
+  transform: scale(1.1);
+}
+
+#training {
+  padding-bottom: 30px;
+}
+#training .training-item h3 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: rgba(64, 84, 178, 0.16);
+}
+#training .training-item img {
+  transition: all linear 0.3s;
+}
+#training .training-item img:hover {
+  transform: scale(1.1);
+}
+
+#food_safety {
+  padding-bottom: 40px;
+}
+#food_safety .swiper {
+  width: 100%;
+  height: 100%;
+}
+#food_safety .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#food_safety .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#audit_inspection {
+  padding-bottom: 40px;
+}
+#audit_inspection .audit-main {
+  background-color: rgba(0, 201, 97, 0.19);
+}
+#audit_inspection .audit-main .audit-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#audit_inspection .audit-main .audit-item h3 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+#audit_inspection .audit-main .audit-item img {
+  transition: all linear 0.3s;
+}
+#audit_inspection .audit-main .audit-item img:hover {
+  transform: scale(1.09);
+}
+
+#footer {
+  margin-top: 30px;
+  background-color: rgba(119, 119, 77, 0.07);
+}
+#footer .get-in-touch {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#footer .get-in-touch .footer-header {
+  margin-bottom: 80px;
+}
+#footer .get-in-touch .footer-header h3 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 60px;
+  color: Black;
+  text-transform: uppercase;
+  text-align: center;
+}
+#footer .get-in-touch .footer-item {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+#footer .get-in-touch .footer-item h5 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  color: Black;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+#footer .get-in-touch .footer-item p {
+  line-height: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+#footer .get-in-touch .footer-item p a {
+  color: Black;
+}
+#footer .get-in-touch .footer-item2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 140px;
+  padding-right: 0px;
+}
+#footer .get-in-touch .footer-item2 h5 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  color: Black;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+#footer .get-in-touch .footer-item2 p {
+  line-height: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+#footer .get-in-touch .footer-item2 p a {
+  color: Black;
+}
+#footer #copyright {
+  background-color: Black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#footer #copyright .copyright-text p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 0;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+#about{
+    padding-top: 30px;
+        .about-text{
+            p{
+                @include fonts(Roboto,400,18px,$font_common);
+                text-align: justify;
+                line-height: 24px;
+                a{                    
+                    text-transform: capitalize;
+                    @include fonts(Roboto,700,18px,$sec_color)
+                }
+            }
+        }
+}

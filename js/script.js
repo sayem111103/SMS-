@@ -25,7 +25,17 @@ var swiper = new Swiper(".mySwiper", {
   mousewheel: true,
   keyboard: true,
   breakpoints: {
-    
+    320: {
+      slidesPerView: 2,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    },
+
+    576: {
+        
+    }
   }
 });
 
@@ -45,6 +55,25 @@ var swipe = new Swiper(".mySwipe", {
   mousewheel: true,
   keyboard: true,
   breakpoints: {
+    320: {
+      slidesPerView: 4,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },      
+    },
+
     
+    576: {
+        
+    }
   }
+});
+
+$('.show').on("click", function(){
+  $('#smartphone_nav').css("left","0")
+});
+
+$( ".hide" ).on("click", function(){
+  $( "#smartphone_nav" ).css( "left","-100%" )
 });

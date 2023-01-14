@@ -182,6 +182,61 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 15px;
 }
 
+#smartphone_nav {
+  display: none;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  left: -100%;
+  transition: all linear 0.3s;
+  z-index: 99999;
+}
+#smartphone_nav svg {
+  width: 32px;
+  position: absolute;
+  top: 10px;
+  left: 58%;
+  cursor: pointer;
+  background-color: #214d74;
+  padding: 10px;
+}
+#smartphone_nav svg:active {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+#smartphone_nav svg:active path {
+  fill: #111111;
+}
+#smartphone_nav .responsive_menu {
+  width: 70%;
+  background-color: #fff;
+  height: 100vh;
+  overflow-y: scroll;
+}
+#smartphone_nav .responsive_menu ul {
+  padding-top: 60px;
+  padding-left: 0;
+}
+#smartphone_nav .responsive_menu ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #111111;
+  text-align: center;
+}
+#smartphone_nav .responsive_menu ul li:last-child {
+  border-bottom: none;
+}
+#smartphone_nav .responsive_menu ul li:hover a {
+  color: rgba(0, 171, 255, 0.7294117647);
+}
+#smartphone_nav .responsive_menu ul li a {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  color: Black;
+  text-transform: uppercase;
+  transition: all linear 0.2s;
+}
+
 #banner {
   margin-top: 20px;
   margin-bottom: 20px;

@@ -112,3 +112,58 @@
         }
     }
 }
+
+
+#smartphone_nav{
+    display: none;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    transition: all linear .3s;
+    z-index: 99999;
+     svg {
+        width: 32px;
+        position: absolute;
+        top: 10px;
+        left: 58%;
+        cursor: pointer;
+        background-color: #214d74;
+        padding: 10px;
+        &:active{
+            background-color: rgba(255, 255, 0, 0.7);
+        }
+
+        &:active path{
+            fill: #111111;
+        }
+    }
+    .responsive_menu{
+        width: 70%;
+        background-color: #fff;
+        height: 100vh;  
+        overflow-y: scroll;       
+        ul{
+            padding-top: 60px;
+            padding-left: 0;
+            li{
+                padding: 15px 0;
+                border-bottom: 1px solid #111111;
+                text-align: center;
+                &:last-child{
+                    border-bottom: none;
+                }
+                &:hover a{
+                    color: #00abffba;
+                }
+
+                a{
+                    @include fonts(Roboto,400,13px,$font_common);
+                        text-transform: uppercase;
+                        transition: all linear .2s;
+                }
+            }
+        }
+    }
+}

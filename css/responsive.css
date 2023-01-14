@@ -1,0 +1,71 @@
+@media screen and (max-width: 576px) {
+    #logo .sms_logo img {
+        width: 118px;
+    }
+
+    #smartphone_nav{
+        display: block;
+    }
+
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .navbar .nav-main {
+        display: none;
+    }
+
+    nav > .container button i{
+        color: #00abffba;
+    }
+
+    nav > .container button{
+        border: 1px solid #00abffba;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    #logo .sms_logo {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #banner .ban-left {
+        left: 10%;
+    }
+
+    #banner .ban-right {
+        right: 10%;
+    }
+
+    .header h3 {
+        font-size: 19px;
+    }
+
+    .global {
+        margin-bottom: 25px;
+    }
+
+    #certification .certificate-item img:hover {
+        transform: unset;
+    }
+
+    .certificate-item  {
+        margin-bottom: 20px;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    #training .training-item img:hover {
+        transform: unset;
+    }
+
+    .training-item {
+        margin-bottom: 20px;
+    }
+}
